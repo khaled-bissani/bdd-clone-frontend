@@ -11,6 +11,7 @@ img {
 }
 body {
     font-family: theMixSemiBold;
+    background-color: #f5f5f5;
 }
 /* Navigation bar */
 
@@ -41,7 +42,7 @@ body {
 
 /* Hero */
 .hero {
-    background: url("../images/slide3.jpg");
+    background: url("../images/slide5.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -92,7 +93,49 @@ body {
 .foundations-header {
     text-align: center;
     font-size: 32px;
+    font-family: theMixBold;
     margin-bottom: 20px;
+}
+
+.foundations-box-design {
+    display: flex;
+    justify-content: space-evenly;
+    height: 70%;
+}
+
+.foundations-box {
+    max-width: 100%;
+    width:18%;
+    padding: 3vh 3vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.foundations-box-image {
+    width: 90%;
+}
+
+.foundations-box  img {
+    width: 100%;
+}
+
+.foundations-box h2 {
+    font-size: 20px;
+    font-family: theMixBold;
+    font-weight: 400;
+    text-align: center;
+}
+
+.foundations-box p {
+    color: #646464;
+    font-size: 16px;
+    font-family: theMixSemiBold;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
 }
 
 /* Utilities */
@@ -112,6 +155,7 @@ body {
     border-radius: 30px;
     font-size: 14.4px;
     font-weight: 400;
+    font-family: theMixBold;
     letter-spacing: 1px;
 }
 
@@ -130,4 +174,9 @@ body {
 @font-face {
     font-family: theMixSemiBold;
     src: url(../fonts/TheMixSemiBold-Plain.otf);
+}
+
+@font-face {
+    font-family: theMixBold;
+    src: url(../fonts/TheMixBold.otf);
 }
