@@ -1,0 +1,133 @@
+/* Css Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    height: 100%;
+}
+body {
+    font-family: theMixSemiBold;
+}
+/* Navigation bar */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.link{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13.6px;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+}
+
+.link > li {
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.link > li:last-child {
+    margin-right: 0px;
+  }
+
+/* Hero */
+.hero {
+    background: url("../images/slide3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    position: relative;
+  }
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+    padding: 15vh 10vw 15vh 10vw;
+    width: 100%;
+}
+
+.hero-heading {
+    
+    text-align: center;
+    font-size: 48px;
+    font-family: theMixBlack;
+    line-height:48px;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.down-icon{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 25%;
+    margin-top: 25px;
+}
+
+.down {
+    width:50px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Foundations */
+
+.foundations {
+    padding: 5vh 0;
+}
+
+.foundations-header {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Utilities */
+
+.container {
+    padding: 2vh 12vh;
+    width: 100%;
+}
+
+.bold {
+    font-weight: bolder;
+}
+
+.button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14.4px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.button-blue {
+    background-color: #0078be;
+    color: #fff;
+}
+
+/* Fonts */
+
+@font-face {
+    font-family: theMixBlack;
+    src: url(../fonts/TheMixBlack-Plain.otf);
+}
+
+@font-face {
+    font-family: theMixSemiBold;
+    src: url(../fonts/TheMixSemiBold-Plain.otf);
+}
