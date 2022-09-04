@@ -165,7 +165,6 @@ body {
     background-image: url(../images/parallax-4.jpg);
     background-position: center;
     background-color: #0078be;
-    z-index: 300;
 }
 
 .explore-heading {
@@ -190,6 +189,104 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 5vh 0;
+}
+
+/* Join BDD */
+
+.join-section {
+    display: flex;
+}
+
+.join h1 {
+    text-align: center;
+    font-size: 32px;
+    font-family: theMixBold;
+    color: #212121;
+    padding: 5vh;
+}
+
+.join-image {
+    width: 30%;
+    height: 50%;
+}
+
+.join-image > img {
+    width: 100%;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 69%;
+}
+
+.join-sub-container {
+    display: flex;
+    justify-content: space-between;
+    height: 90%;
+}
+
+.join-box {
+    width:22%;
+    height: 90%;
+    background-image: url(../images/bg-icon.png);
+    background-size:cover;
+    background-position: center left;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 6%);
+    filter: brightness(100%);
+    border-radius: 5px;
+}
+
+.join-box > h2 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: theMixBold;
+    color: #212121;
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+.join-box > ul {
+    list-style-image: url(../images/bullet5.png);
+    font-size: 16px;
+    font-family: theMixSemiBold;
+    color: #646464;
+    text-align: start;
+    padding: 0 11vh;
+    margin-bottom: 50%;
+}
+
+.join-box > button {
+    margin-left: 4vw;
+    margin-bottom: 300px;
+}
+
+.join-footer {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    /* margin-top: 5px; */
+}
+
+.join-footer >h3 {
+    font-size: 16px;
+    font-family: theMixSemiBold;
+    color: #646464;
+}
+
+.join-store {
+    display: flex;
+    justify-content: end;
+    width: 12%;
+    margin-top: 15px;
+}
+
+.join-store > img {
+    width: 100%;
+    margin-left: 10px;
 }
 
 /* Footer */
@@ -314,6 +411,7 @@ body {
 .sitemap li:hover, .sitemap p:hover, .sitemap img:hover {
     border-bottom: 2px solid #0078be;
     border-radius: 0;
+    cursor: pointer;
 }
 
 .trademark {
@@ -330,6 +428,7 @@ body {
 
 .webneoo {
     color: #0078be;
+    cursor: pointer;
 }
 
 .social-media {
@@ -431,3 +530,19 @@ body {
     font-family: theMixBold;
     src: url(../fonts/TheMixBold.otf);
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+      flex-direction: column;
+    }
+  
+    .media-images > img {
+      width: 100%;
+    }
+  
+    .program-images > div {
+      width: 100%;
+    }
+  }
