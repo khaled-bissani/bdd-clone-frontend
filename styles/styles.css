@@ -55,7 +55,7 @@ body {
     flex-direction: column;
     /* justify-content: center; */
     align-content: center;
-    padding: 15vh 10vw 15vh 10vw;
+    padding: 15vh 10vw 22vh 10vw;
     width: 100%;
 }
 
@@ -342,6 +342,96 @@ body {
     width: 100%;
 }
 
+/* Trending */
+
+.trending {
+    padding-bottom: 10vh;
+}
+
+.trending > h2 {
+    font-size: 32px;
+    font-family: theMixBold;
+    color: #212121;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+
+.trending-container {
+    display: flex;
+    justify-content: center;
+    width: 85%;
+    margin-left: 20vh;
+}
+
+.trending-box {
+    width:33%;
+    background-color: #fff;
+    box-shadow: 0px 4px 15px 0px rgb(0 0 0 / 6%);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 5vh;
+    margin-bottom: 10vh;
+}
+
+.trending-image {
+    width: 100%;
+}
+
+.trending-image > img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.trending-box > h3 {
+    font-size: 15px;
+    font-family: theMixBold;
+    color: #212121;
+    padding: 5vh 5vh 5vh 5vh;
+    border-bottom: 1px solid lightgrey;
+    cursor: pointer;
+    height: 100%;
+}
+
+.trending-box > p {
+    font-size: 12px;
+    font-family: theMixSemiBold;
+    color: #646464;
+    padding: 2vh 5vh 2vh 5vh;
+}
+
+.trending-button {
+    margin-left: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
+.left-arrow {
+    margin: 30vh 0 0 0;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    color: #e3e3e3;
+    background-color: #0078be;
+    width: 35px;
+    height: 30px;
+}
+
+.right-arrow {
+    margin: 30vh 0 0 0;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    color: #e3e3e3;
+    background-color: #0078be;
+    width: 35px;
+    height: 30px;
+}
+
 /* Footer */
 
 .footer {
@@ -529,9 +619,9 @@ body {
     color: #0078be;
     bottom: 20px;
     right: 20px;
-    width: 30px;
-    height: 30px;
-    font-size: 13px;
+    width: 35px;
+    height: 36px;
+    padding-top: 5px;
 }
 
 .scroll-to-top:hover {
@@ -564,6 +654,21 @@ body {
     background-color: #0078be;
     color: #fff;
 }
+
+.arrow {
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+
+  .right {
+    transform: rotate(-45deg);
+  }
+  
+  .left {
+    transform: rotate(135deg);
+  }
 
 /* Fonts */
 
